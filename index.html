@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bag Store - Premium, Sustainable, and Minimalist Bags for Every Adventure." />
+    <title>Bag Store</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <div class="logo-area">
+            <img src="https://cdn-icons-png.flaticon.com/512/2331/2331970.png" alt="Bag Store Logo" />
+            <h1>Bag Store</h1>
+        </div>
+        <nav id="nav-links">
+            <button onclick="showPage('home')">Home</button>
+            <button onclick="showPage('about')">About</button>
+            <button onclick="showPage('services')">Services</button>
+            <button onclick="showPage('portfolio')">Portfolio</button>
+            <button onclick="showPage('contact')">Contact</button>
+        </nav>
+        <div class="menu-icon" onclick="toggleNav()" aria-label="Toggle Menu">&#9776;</div>
+    </header>
+    <main>
+        <div id="home" class="container">
+            <section class="hero">
+                <h2>Timeless Bags for Every Story</h2>
+                <p>Explore premium, minimalist designs built for your daily adventures and dreams.</p>
+                <a href="#" class="btn" onclick="showPage('services')">Explore Collection</a>
+            </section>
+            <section class="features-section">
+                <h3>Why Choose Our Bags?</h3>
+                <ul class="features">
+                    <li><strong>Minimalist Craftsmanship:</strong> Clean designs that complement every outfit.</li>
+                    <li><strong>Built to Last:</strong> Durable, eco-conscious materials for everyday use.</li>
+                    <li><strong>Thoughtful Functionality:</strong> Smart compartments, lightweight feel.</li>
+                    <li><strong>Sustainable Luxury:</strong> Elegant choices without compromise.</li>
+                </ul>
+            </section>
+            <section class="testimonials">
+                <h3>What Our Customers Say</h3>
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <p>"The Urban Tote is a dream. Sleek, sturdy, and fits my whole day!"</p>
+                        <strong>- Priya M.</strong>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"Gifting the custom clutch was a hit — flawless craftsmanship."</p>
+                        <strong>- Ayaan R.</strong>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"I love how eco-friendly yet luxurious my backpack feels."</p>
+                        <strong>- Sneha D.</strong>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div id="about" class="container hidden about-section">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <img src="img/about-section-img.jpg" alt="Crafted Bags">
+                <div class="about-text">
+                    <p>We believe a bag is more than an accessory — it's a companion for your journeys, dreams, and
+                        ambitions.</p>
+                    <p>At Bag Store, each piece is crafted to blend minimalist beauty with practical functionality.</p>
+                    <p>With a decade of expertise, we are committed to sustainable luxury and enduring style.</p>
+                </div>
+            </div>
+        </div>
+        <div id="services" class="container hidden services-section">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">Custom Designs</div>
+                <div class="service-card">Bulk Solutions</div>
+                <div class="service-card">Eco-Friendly Materials</div>
+                <div class="service-card">Personal Engraving</div>
+                <div class="service-card">24/7 Support</div>
+                <div class="service-card">Worldwide Delivery</div>
+            </div>
+        </div>
+        <div id="portfolio" class="container hidden portfolio-section">
+            <h2>Our Portfolio</h2>
+            <p>Explore a selection of our bestsellers crafted with love.</p>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="img/bagpack.jpg" alt="Metro Backpack">
+                    <div class="portfolio-info">
+                        <h3>The Metro Backpack</h3>
+                        <p>Designed for life in motion — clean lines, maximum impact.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="img/leather-bag.jpg" alt="Leather Tote">
+                    <div class="portfolio-info">
+                        <h3>Signature Leather Tote</h3>
+                        <p>Premium craftsmanship for your everyday elegance.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="img/travel-bag.jpg" alt="Voyager Duffle">
+                    <div class="portfolio-info">
+                        <h3>Voyager Duffle</h3>
+                        <p>Spacious, stylish, and ready for any adventure.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="img/clutch-bag.jpg" alt="Evening Clutch">
+                    <div class="portfolio-info">
+                        <h3>Elysian Evening Clutch</h3>
+                        <p>Timeless charm for unforgettable nights.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contact" class="container hidden contact-section">
+            <h2>Contact Us</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>Have a question or a special request? Fill out the form and we’ll get back to you shortly.</p>
+                    <p><strong>Email:</strong> support@bagstore.com</p>
+                    <p><strong>Phone:</strong> +1 (234) 567-890</p>
+                </div>
+
+                <form id="contact-form" class="contact-form">
+                    <div class="input-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" placeholder="Write your message" required></textarea>
+                    </div>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Bag Store. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
